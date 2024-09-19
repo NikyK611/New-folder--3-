@@ -64,3 +64,40 @@ nav a:hover{
     transform: scale(1.2);
     transition: all 0.1s ease-in-out;
 }
+@media (max-width:500px){
+    body{
+        background-color: red;
+    }
+    .flexbox{
+        flex-direction: column;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .DragonBoy{
+        width: 100%;
+        aspect-ratio: 2/5;
+    }
+    nav a {
+        font-size: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    #title h1 {
+        font-size: 50px;
+    }
+    nav{
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .popular_dragons{
+        text-align: center;
+    }
+    .popular_dragons{
+        font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    }
+}
