@@ -65,9 +65,6 @@ nav a:hover{
     transition: all 0.1s ease-in-out;
 }
 @media (max-width:500px){
-    body{
-        background-color: red;
-    }
     .flexbox{
         flex-direction: column;
         padding-left: 35px;
@@ -76,6 +73,7 @@ nav a:hover{
     .DragonBoy{
         width: 100%;
         aspect-ratio: 2/5;
+        height: 250px;
     }
     nav a {
         font-size: 16px;
@@ -99,5 +97,8 @@ nav a:hover{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    }
+    .DragonBoy:hover{
+        transform: scale(1);
     }
 }
