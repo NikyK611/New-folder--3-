@@ -3,35 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="website1.css">
 </head>
 <body>
   <header id="title">
     <h1>NikyzDragonz</h1>
     <h6>We sell dragons and keychains!</h6>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./contacts.html">Contacts</a>
+      <a href="./about.html">About us</a>
+    </nav>
   </header> 
-  <nav>
-    <a href="./index.html">Home</a>
-    <a href="./contacts.html">Contacs</a>
-    <a href="./about.html">About us</a>
-  </nav>
   <main>
     <section>
           <div class="popular_dragons">
-            <h2>Popular Items</h2>
+            <h2 class="popular">Popular Items</h2>
             <div class="flexbox">
               <div>
                 <h3>Dragons</h3>
-                <a href="#"><img class="DragonBoy" src="DragonCover.png" alt="Dragons" /></a>
+                <a href="#dragon-modal"><img class="DragonBoy" src="DragonCover.png" alt="Dragons" /></a>
               </div>
               <div>
                 <h3>Key Chains</h3>
-                <a href="#"><img class="DragonBoy" src="keychains.png" alt="keychains" /></a>
+                <a href="#keychain-modal"><img class="DragonBoy" src="keychains.png" alt="keychains" /></a>
               </div>
             </div>
           </div>
     </section>
   </main>
+  <footer>
+    <div class="footer-section">
+      <h3>Contact us</h3>
+      <p>
+      <a href="mailto:thisistotalyarealemailbcwhynot@gmail.com">email</a>
+      </p>
+      <p>&copy; 2024 NikyzDragonz</p>
+    </div>
+  </footer>
+  <div id="dragon-modal" class="modal">
+    <div class="modal-content">
+      <a href="#close" title="Close" class="close">X</a>
+      <h1>Dragons</h1>
+      <div class="item-container">
+        <img class="item-img" src="DragonCover.png" alt="Dragons" />
+        <div class="item-text">
+          <h4>Baby Ocean Dragon</h4>
+          <h6>Price: $13</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="keychain-modal" class="modal">
+    <div class="modal-content">
+      <a href="#close" title="Close" class="close">X</a>
+      <h1>KeyChains</h1>
+      <div class="item-container">
+        <img class="item-img" src="keychains.png" alt="keychains" />
+        <div class="item-text">
+          <h4>Flexi Whale Keychain</h4>
+          <h6>Price: $8</h6>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

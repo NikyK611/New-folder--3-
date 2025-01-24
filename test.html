@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+    opacity: 0;
+
+    transition: opacity 400ms ease-in-out;
+    
+    pointer-events: none;
+}
+.modal:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-content{
+    position: relative;
+      width: 50%;
+
+    max-width: 600px;
+    
+    margin: 10% auto;
+    padding: 20px;
+    background: #fff;
+    
+    border-radius: 4px;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.close:hover{
+    color: red;
+}
+</style>
+<body>
+    <main>
+        <a href="#open-modal">Button text</a>
+        <div id="open-modal" class="modal">
+            <div class="modal-content">
+              <a href="#close" title="Close" class="close">X</a>
+              <h2>Modal Window</h2>
+              <p>This is a simple Modal Window created with html and css, without JS.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
