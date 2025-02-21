@@ -63,6 +63,8 @@ nav a:hover{
 .DragonBoy {
     width: 500px;
     height: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 .flexbox {
     display: flex;
@@ -73,6 +75,7 @@ nav a:hover{
 .DragonBoy:hover{
     transform: scale(1.2);
     transition: all 0.1s ease-in-out;
+    opacity: 0.5;
 }
 footer{
 background-color: #004a94;
@@ -232,6 +235,13 @@ main{
 .item-text h4,
 .item-text h6{
     text-shadow: 0 0 30px #fff;
+}
+.offer{
+    color: black;
+    text-decoration: none;
+}
+.offer:hover{
+color: rgb(65, 65, 65);
 }
 @media (max-width:500px){
     .flexbox{
